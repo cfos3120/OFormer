@@ -6,7 +6,7 @@ from einops.layers.torch import Rearrange
 import numpy as np
 from .attention_module import PreNorm, PostNorm, LinearAttention, CrossLinearAttention,\
     FeedForward, GeGELU, ProjDotProduct
-from .cnn_module import UpBlock, FourierConv2d, PeriodicConv2d
+#from .cnn_module import UpBlock, FourierConv2d, PeriodicConv2d
 from torch.nn.init import xavier_uniform_, orthogonal_
 
 

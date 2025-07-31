@@ -7,11 +7,10 @@ from einops.layers.torch import Rearrange
 from torch.nn.init import xavier_uniform_, constant_, xavier_normal_
 from .attention_module import pair, PreNorm, PostNorm,\
     StandardAttention, FeedForward, LinearAttention, ReLUFeedForward
-from .cnn_module import PeriodicConv2d, PeriodicConv3d, UpBlock
+#from .cnn_module import PeriodicConv2d, PeriodicConv3d, UpBlock
 #from .gnn_module import SmoothConvEncoder, SmoothConvDecoder, index_points
 #from torch_scatter import scatter
 # helpers
-
 
 class Transformer(nn.Module):
     def __init__(self,

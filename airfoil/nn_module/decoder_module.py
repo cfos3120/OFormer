@@ -1465,6 +1465,7 @@ class IrregSTDecoder2D(nn.Module):
 
     def decode(self, z, z_node):
         z = self.out_norm(z)
+        #print('decoder z shape', z.shape)
         z = self.to_out(torch.cat((z, z_node), dim=-1))
         return z
 
